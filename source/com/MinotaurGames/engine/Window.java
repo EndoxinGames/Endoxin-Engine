@@ -4,10 +4,21 @@ import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 
+import com.MinotaurGames.localization.Localization;
+import com.MinotaurGames.localization.LocalizationNotPresentException;
+import com.MinotaurGames.localization.LocalizionNotInitializedException;
+
 public class Window {
 	
 	public static void createWindow(int width, int height, String title){
 		Display.setTitle(title);
+		try {
+			Display.setTitle(Localization.localize("test", 1));
+		} catch (LocalizionNotInitializedException e1) {
+			e1.printStackTrace();
+		} catch (LocalizationNotPresentException e) {
+			e.printStackTrace();
+		}
 		try {
 			Display.setDisplayMode(new DisplayMode(width, height));
 			Display.create();

@@ -1,4 +1,5 @@
 import com.MinotaurGames.engine.Window;
+import com.MinotaurGames.localization.Localization;
 
 
 public class Main {
@@ -9,6 +10,7 @@ public class Main {
 	public static final String TITLE = "Laberynthine v" + VERSION;
 	
 	public static void main(String[] args) {
+		Localization.init("English");
 		Window.createWindow(WIDTH, HEIGHT, TITLE);
 	}
 	
@@ -25,7 +27,10 @@ public class Main {
 	}
 	
 	public void run(){
-		while(!Window.isCloseRequested()){
+		while(true){
+			if(!Window.isCloseRequested()){
+				break;
+			}
 			render();
 		}
 	}
