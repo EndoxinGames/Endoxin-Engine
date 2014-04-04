@@ -1,2 +1,3 @@
 English:enUS
 Pirate:pirate
+日本語:jp
