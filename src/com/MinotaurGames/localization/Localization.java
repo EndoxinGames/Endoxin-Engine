@@ -7,8 +7,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
-import com.MinotaurGames.exceptions.*;
-
 public class Localization {
 	public static String language;
 	public static HashMap<String, String> languages = new HashMap<String, String>();
@@ -17,7 +15,7 @@ public class Localization {
 	public static void init(String language){
 		try{
 			languages = populateRoster();
-		} catch(FileMissingException e) {
+		} catch(FileNotFoundException e) {
 			
 		}
 		System.out.println("Language set to " + language);
@@ -47,12 +45,12 @@ public class Localization {
 		}
 	}
 	
-	private static HashMap<String, String> populateRoster() throws FileMissingException {
+	private static HashMap<String, String> populateRoster() throws FileNotFoundException {
 		File file = new File(new File("").getAbsolutePath().concat("/assets/localizations/languages.txt"));
 		HashMap<String, String> roster = new HashMap<String, String>();
 		if(!file.canRead()){
 			System.out.println("File not found");
-			throw new FileMissingException();
+			throw new FileNotFoundException();
 		} else {
 			BufferedReader br = null;
 			try {
