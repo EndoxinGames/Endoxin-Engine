@@ -3,21 +3,14 @@ import java.io.FileNotFoundException;
 import com.MinotaurGames.engine.Window;
 import com.MinotaurGames.localization.Localization;
 
-
 public class Main {
 	
 	public static final int WIDTH = 800;
 	public static final int HEIGHT = 600;
 	public static final String VERSION = "InDev";
 	public static final String TITLE = "Labyrinthine v" + VERSION;
-	/*
-	 * Languages:
-	 *	English
-	 *	Pirate
-	 *	日本語
-	 *	
-	 */
-	public static final String LANG = "日本語";
+
+	public static final String LANG = "English";
 	
 	public static void main(String[] args) {
 		try {
