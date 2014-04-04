@@ -4,9 +4,9 @@ import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 
+import com.MinotaurGames.exceptions.LocalizationNotPresentException;
+import com.MinotaurGames.exceptions.LocalizionNotInitializedException;
 import com.MinotaurGames.localization.Localization;
-import com.MinotaurGames.localization.LocalizationNotPresentException;
-import com.MinotaurGames.localization.LocalizionNotInitializedException;
 
 public class Window {
 	

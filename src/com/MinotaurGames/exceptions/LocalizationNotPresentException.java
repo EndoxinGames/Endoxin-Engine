@@ -1,4 +1,4 @@
-package com.MinotaurGames.localization;
+package com.MinotaurGames.exceptions;
 
 public class LocalizationNotPresentException extends Exception {
 	private static final long serialVersionUID = 1L;

@@ -8,9 +8,10 @@ public class Main {
 	public static final int HEIGHT = 600;
 	public static final String VERSION = "InDev";
 	public static final String TITLE = "Labyrinthine v" + VERSION;
+	public static final String LANG = "English";
 	
 	public static void main(String[] args) {
-		Localization.init("English");
+		Localization.init(LANG);
 		Window.createWindow(WIDTH, HEIGHT, TITLE);
 	}
 	
