@@ -1,4 +1,4 @@
-package com.MinotaurGames.ResourceLoader;
+package com.MinotaurGames.assetloader;
 
 import java.io.BufferedReader;
 import java.io.File;
