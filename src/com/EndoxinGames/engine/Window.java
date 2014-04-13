@@ -1,12 +1,12 @@
-package com.MinotaurGames.engine;
+package com.EndoxinGames.engine;
 
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 
-import com.MinotaurGames.exceptions.LocalizationNotPresentException;
-import com.MinotaurGames.exceptions.LocalizionNotInitializedException;
-import com.MinotaurGames.localization.Localization;
+import com.EndoxinGames.engine.exceptions.LocalizationNotPresentException;
+import com.EndoxinGames.engine.exceptions.LocalizionNotInitializedException;
+import com.EndoxinGames.engine.localization.Localization;
 
 public class Window {
 	
@@ -46,6 +46,10 @@ public class Window {
 	
 	public static String getTitle(){
 		return Display.getTitle();
+	}
+
+	public static void dispose() {
+		Display.destroy();
 	}
 	
 }

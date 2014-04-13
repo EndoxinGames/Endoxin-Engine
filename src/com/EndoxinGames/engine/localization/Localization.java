@@ -1,4 +1,4 @@
-package com.MinotaurGames.localization;
+package com.EndoxinGames.engine.localization;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,8 +7,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
-import com.MinotaurGames.exceptions.LocalizationNotPresentException;
-import com.MinotaurGames.exceptions.LocalizionNotInitializedException;
+import com.EndoxinGames.engine.exceptions.LocalizationNotPresentException;
+import com.EndoxinGames.engine.exceptions.LocalizionNotInitializedException;
 
 public class Localization {
 	public static String language;
